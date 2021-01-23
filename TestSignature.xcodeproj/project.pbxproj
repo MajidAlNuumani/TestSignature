@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE7F057E0FED9600F11D330D /* Pods_TestSignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A6C516CC59AC6472A8E912 /* Pods_TestSignature.framework */; };
 		D006032C25BAD9290059F3F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006032B25BAD9290059F3F9 /* AppDelegate.swift */; };
 		D006033325BAD9290059F3F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D006033125BAD9290059F3F9 /* Main.storyboard */; };
 		D006033525BAD92A0059F3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D006033425BAD92A0059F3F9 /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		D006034625BAD98F0059F3F9 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006034425BAD98F0059F3F9 /* SignatureViewController.swift */; };
 		D006034D25BADB270059F3F9 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006034B25BADB270059F3F9 /* EllipticCurveKeyPair.swift */; };
 		D006034E25BADB270059F3F9 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006034C25BADB270059F3F9 /* SHA256.swift */; };
+		D095638D25BAFD6E0069A847 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D095638C25BAFD6E0069A847 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21A6C516CC59AC6472A8E912 /* Pods_TestSignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E50F540F748366B5309740F /* Pods-TestSignature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignature.debug.xcconfig"; path = "Target Support Files/Pods-TestSignature/Pods-TestSignature.debug.xcconfig"; sourceTree = "<group>"; };
+		97D45BD7CACAFF7ADD37351B /* Pods-TestSignature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignature.release.xcconfig"; path = "Target Support Files/Pods-TestSignature/Pods-TestSignature.release.xcconfig"; sourceTree = "<group>"; };
 		D006032825BAD9290059F3F9 /* TestSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D006032B25BAD9290059F3F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D006033225BAD9290059F3F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		D006034425BAD98F0059F3F9 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 		D006034B25BADB270059F3F9 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
 		D006034C25BADB270059F3F9 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		D095638C25BAFD6E0069A847 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7F057E0FED9600F11D330D /* Pods_TestSignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13CA1C4CB15E3D24093B65C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21A6C516CC59AC6472A8E912 /* Pods_TestSignature.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA50FA07D845D20FC07D5BF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E50F540F748366B5309740F /* Pods-TestSignature.debug.xcconfig */,
+				97D45BD7CACAFF7ADD37351B /* Pods-TestSignature.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D006031F25BAD9290059F3F9 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +74,8 @@
 				D006034025BAD9480059F3F9 /* Utils.swift */,
 				D006032A25BAD9290059F3F9 /* TestSignature */,
 				D006032925BAD9290059F3F9 /* Products */,
+				AA50FA07D845D20FC07D5BF8 /* Pods */,
+				13CA1C4CB15E3D24093B65C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +97,7 @@
 				D006033425BAD92A0059F3F9 /* Assets.xcassets */,
 				D006033625BAD92A0059F3F9 /* LaunchScreen.storyboard */,
 				D006033925BAD92A0059F3F9 /* Info.plist */,
+				D095638C25BAFD6E0069A847 /* GoogleService-Info.plist */,
 			);
 			path = TestSignature;
 			sourceTree = "<group>";
@@ -91,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D006033C25BAD92A0059F3F9 /* Build configuration list for PBXNativeTarget "TestSignature" */;
 			buildPhases = (
+				1FD57EE019E7025B9D94FA58 /* [CP] Check Pods Manifest.lock */,
 				D006032425BAD9290059F3F9 /* Sources */,
 				D006032525BAD9290059F3F9 /* Frameworks */,
 				D006032625BAD9290059F3F9 /* Resources */,
+				71CD6AC3C8839F8D4AEF3EBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,12 +171,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D006033825BAD92A0059F3F9 /* LaunchScreen.storyboard in Resources */,
+				D095638D25BAFD6E0069A847 /* GoogleService-Info.plist in Resources */,
 				D006033525BAD92A0059F3F9 /* Assets.xcassets in Resources */,
 				D006033325BAD9290059F3F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FD57EE019E7025B9D94FA58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSignature-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CD6AC3C8839F8D4AEF3EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSignature/Pods-TestSignature-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSignature/Pods-TestSignature-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestSignature/Pods-TestSignature-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D006032425BAD9290059F3F9 /* Sources */ = {
@@ -303,11 +375,12 @@
 		};
 		D006033D25BAD92A0059F3F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E50F540F748366B5309740F /* Pods-TestSignature.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K2JV9C6PGG;
+				DEVELOPMENT_TEAM = VH842XN2R9;
 				INFOPLIST_FILE = TestSignature/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,11 +396,12 @@
 		};
 		D006033E25BAD92A0059F3F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D45BD7CACAFF7ADD37351B /* Pods-TestSignature.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K2JV9C6PGG;
+				DEVELOPMENT_TEAM = VH842XN2R9;
 				INFOPLIST_FILE = TestSignature/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

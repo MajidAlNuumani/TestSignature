@@ -1,0 +1,6 @@
+framework module Pods_TestSignature {
+  umbrella header "Pods-TestSignature-umbrella.h"
+
+  export *
+  module * { export * }
+}

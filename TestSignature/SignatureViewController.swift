@@ -36,9 +36,9 @@ class SignatureViewController: UIViewController {
                 return EllipticCurveKeyPair.Device.hasSecureEnclave ? [.userPresence, .privateKeyUsage] : [.userPresence]
             }())
             let config = EllipticCurveKeyPair.Config(
-                publicLabel: "no.agens.sign.public",
-                privateLabel: "no.agens.sign.private",
-                operationPrompt: "Sign transaction",
+                publicLabel: "thawani.sign.public",
+                privateLabel: "thawani.sign.private",
+                operationPrompt: "Register User",
                 publicKeyAccessControl: publicAccessControl,
                 privateKeyAccessControl: privateAccessControl,
                 token: .secureEnclaveIfAvailable)
